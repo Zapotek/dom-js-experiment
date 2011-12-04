@@ -11,7 +11,7 @@ require_relative 'files/body.onload.rb'
 class OptionTagsAppendedTest < Test::Unit::TestCase
 
     def setup
-        @js, window = *eval_page( body_onload )
+        @js, window = *DOM.eval_page( body_onload )
         @document = window.document
     end
 
