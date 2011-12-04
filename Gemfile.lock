@@ -1,0 +1,24 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ap (0.1.1)
+      httparty (>= 0.7.7)
+    httparty (0.8.1)
+      multi_json
+      multi_xml
+    libv8 (3.3.10.4)
+    multi_json (1.0.4)
+    multi_xml (0.4.1)
+    nokogiri (1.5.0)
+    taka (0.0.1)
+      nokogiri (>= 1.2.3)
+    therubyracer (0.9.9)
+      libv8 (~> 3.3.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ap
+  taka
+  therubyracer
