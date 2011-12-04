@@ -56,17 +56,15 @@ class DOM::Window
     end
 
     def alert( msg )
-        # puts msg
-        pp msg
-        ap '---------'
+        puts 'Alert: ' + msg
     end
 
     def debug( obj )
-        ap obj
+        pp obj
     end
 
     def debug_type( obj )
-        ap obj.class
+        pp obj.class
     end
 
     def window
