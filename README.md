@@ -10,4 +10,4 @@ It goes without saying that the lib is far from usable.
 See ```test.rb``` for a quick example.
 
 # Author
-Tasos 'Zapotek' Laskos <tasos.laskos@gmail.com>
+Tasos "Zapotek" Laskos -- tasos.laskos@gmail.com
