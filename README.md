@@ -5,9 +5,9 @@ The code is based on [Taka](https://github.com/tenderlove/taka) and the [V8 JS e
 
 It goes without saying that the lib is far from usable.
 
-# Installation
+# Dependencies
 
-```bundle install```
+To install all dependencies run: ```bundle install```
 
 # Examples
 
