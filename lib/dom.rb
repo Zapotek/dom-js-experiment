@@ -55,11 +55,6 @@ module DOM
     def to_absolute( root, link )
 
         parsed =  URI.parse( link )
-        if !parsed.scheme
-            parsed.scheme = URI(root).scheme
-            link = parsed.to_s
-        end
-
         if parsed.scheme == 'file'
            parsed.scheme = nil
            return parsed.to_s
