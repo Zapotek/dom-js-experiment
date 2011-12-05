@@ -14,7 +14,6 @@ class DOM::Window
     attr_reader :navigator
     attr_reader :event
     attr_reader :history
-    attr_reader :frames
 
     attr_reader :readyState
 
@@ -29,7 +28,6 @@ class DOM::Window
 
         # @event = Event.new
         @history = History.new
-        @frames = Frames.new
 
         ready!
     end
@@ -42,6 +40,10 @@ class DOM::Window
     end
 
     def top
+        self
+    end
+
+    def frames
         self
     end
 
