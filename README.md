@@ -11,7 +11,7 @@ To install all dependencies run: ```bundle install```
 
 # Examples
 
-See ```test.rb``` for a quick example.
+See the ```tests``` directory for examples.
 
 # Author
 Tasos "Zapotek" Laskos -- tasos.laskos@gmail.com

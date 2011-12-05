@@ -30,8 +30,8 @@ module DOM
             begin
                  src, code = *read_script( document.location, script )
             rescue Exception => e
-                ap e
-                ap e.backtrace
+                $stderr.puts e
+                $stderr.puts e.backtrace.join( "\n" )
                 next
             end
 
@@ -60,6 +60,11 @@ module DOM
             link = parsed.to_s
         end
 
+        if parsed.scheme == 'file'
+           parsed.scheme = nil
+           return parsed.to_s
+        end
+
         return link if URI.parse( link ).host
 
         begin
@@ -74,8 +79,8 @@ module DOM
 
             return absolute.to_s
         rescue Exception => e
-            ap e
-            ap e.backtrace
+            $stderr.puts e
+            $stderr.puts e.backtrace.join( "\n" )
             return nil
         end
     end
