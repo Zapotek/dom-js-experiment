@@ -9,6 +9,10 @@ It goes without saying that the lib is far from usable.
 
 To install all dependencies run: ```bundle install```
 
+However, there's a good chance that the ```taka``` gem that's going to be installed will throw some errors. <br/>
+Should that happen please download and install my fork of [Taka](https://github.com/Zapotek/taka) which is somewhat more up-to-date.
+
+
 # Examples
 
 See the ```tests``` directory for examples.
