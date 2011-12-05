@@ -41,6 +41,10 @@ class DOM::Window
         self
     end
 
+    def top
+        self
+    end
+
     def setTimeout( code, delay, *args )
         # sleep( delay / 1000 )
 
