@@ -53,8 +53,8 @@ class OptionTagsAppendedTest < Test::Unit::TestCase
       </html>
 EOHTML
 
-        @js, window = *DOM.eval_page( data )
-        @document = window.document
+        @window = DOM::Window.new( data )
+        @document = @window.document
     end
 
     def test_options_populated_by_onload
@@ -62,7 +62,7 @@ EOHTML
         assert_equal 0, @document.getElementsByTagName('option').length
 
         # Execute the onload body attribute
-        @js.eval @document.getElementsByTagName( 'body' ).first.onload
+        @window.eval @document.getElementsByTagName( 'body' ).first.onload
 
         # 4 option tags after onload is executed
         assert_equal 4, @document.getElementsByTagName('option').length

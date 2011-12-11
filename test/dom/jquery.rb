@@ -23,16 +23,15 @@ class JQueryTest < Test::Unit::TestCase
         </body>
     </html>
 EOHTML
-         @js, window = *DOM.eval_page( data )
-         @document = window.document
+         @window = DOM::Window.new( data )
     end
 
     def test_id_selector
-        assert_equal 'test span', @js.eval( '$("#test_span").text()' )
+        assert_equal 'test span', @window.eval( '$("#test_span").text();' )
     end
 
     def test_id_selector_and_element_creation
-        assert_equal 'Test div', @js.eval( '$("#test_div").text()' )
+        assert_equal 'Test div', @window.eval( '$("#test_div").text();' )
     end
 
 end

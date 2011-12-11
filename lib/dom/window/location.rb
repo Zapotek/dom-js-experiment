@@ -24,10 +24,10 @@ class DOM::Window::Location < DOM::Placeholder
         @url.port
     end
 
-    # def hash
-        # return 0 if !@url.fragment
-        # '#' + @url.fragment
-    # end
+    def hash
+        return 0 if !@url.fragment
+        '#' + @url.fragment
+    end
 
     def search
         '?' + @url.query
@@ -35,10 +35,6 @@ class DOM::Window::Location < DOM::Placeholder
 
     def protocol
         @url.scheme + ':'
-    end
-
-    def to_s
-        @url.to_s
     end
 
 end
