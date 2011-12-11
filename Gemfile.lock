@@ -1,10 +1,15 @@
+GIT
+  remote: git://github.com/Zapotek/taka.git
+  revision: d3f25df43e70e55e84db14c5292b484d4286c39c
+  specs:
+    taka (0.0.2)
+      nokogiri (~> 1.5.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
     libv8 (3.3.10.4)
     nokogiri (1.5.0)
-    taka (0.0.1)
-      nokogiri (>= 1.2.3)
     therubyracer (0.9.9)
       libv8 (~> 3.3.10)
 
@@ -12,5 +17,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  taka
+  taka!
   therubyracer
