@@ -13,5 +13,41 @@ To install all dependencies run: ```bundle install```
 
 See the ```tests``` and ```examples``` directory for examples.
 
+Here's a quickie:
+
+```
+require_relative 'init'
+
+html = <<EOHTML
+<html>
+    <head>
+        <title>My title!</title>
+    </head>
+
+    <body>
+        <div>
+            <script type="text/javascript">
+                document.write( '<h1>Hello</h1>' );
+            </script>
+        </div>
+    </body>
+</html>
+EOHTML
+
+window = DOM::Window.new( html )
+
+# you'll see the updated HTL code
+puts window.document.to_html
+
+puts '-' * 80
+
+# grab the automatically added element
+h1 = window.eval( 'document.getElementsByTagName( "h1" )[0]' )
+puts 'The first H1 is: ' + h1
+
+answer = ( h1 == window.document.getElementsByTagName( 'h1' )[0] ) ? 'Yes' : 'No'
+puts 'Does it work both ways? ' + answer
+```
+
 # Author
 Tasos "Zapotek" Laskos -- tasos.laskos@gmail.com
