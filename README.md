@@ -15,7 +15,7 @@ Should that happen please download and install my fork of [Taka](https://github.
 
 # Examples
 
-See the ```tests``` directory for examples.
+See the ```tests``` and ```examples``` directory for examples.
 
 # Author
 Tasos "Zapotek" Laskos -- tasos.laskos@gmail.com
