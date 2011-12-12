@@ -27,9 +27,6 @@ window = DOM::Window.new( html, true )
 #
 # our XSS vector and our seed
 #
-# the seed is JS generated JS code just to showcase
-# the possible viability of this system
-#
 window.navigator.userAgent = <<EOJS
     <h1>Injected heading!</h1>
 EOJS
