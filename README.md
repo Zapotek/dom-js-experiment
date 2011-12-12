@@ -36,7 +36,7 @@ EOHTML
 
 window = DOM::Window.new( html )
 
-# you'll see the updated HTL code
+# you'll see the updated HTML code
 puts window.document.to_html
 
 puts '-' * 80
